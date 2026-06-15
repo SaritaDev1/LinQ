@@ -59,7 +59,7 @@ Presentación → Negocio → Acceso a Datos → Base de Datos
   Entidades    Entidades     Entidades
 ```
 
-La capa de entidades funciona como apoyo para mover los datos entre las capas de forma ordenada.
+La capa de entidades funciona como apoyo para representar y mover los datos entre las capas de forma ordenada.
 
 En esta arquitectura, LINQ participa principalmente en la capa de acceso a datos, porque ahí se realizan las consultas a la base de datos, como buscar clientes, listar productos o filtrar pedidos de `Northwind`.
 
