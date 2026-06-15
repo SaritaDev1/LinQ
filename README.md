@@ -28,23 +28,41 @@ Una forma sencilla de entender LINQ es pensar que permite hacer preguntas a los 
 
 LINQ ayuda a trabajar con información de una forma más clara dentro de C#, usando clases, objetos y propiedades del sistema.
 
+# Arquitectura de 4 capas
 
-# Arquitectura en 3 capas
+La arquitectura de 4 capas es una forma de organizar un sistema para que el código esté separado según la función que cumple cada parte.
 
-La arquitectura en 3 capas es una forma de organizar un sistema para que el código esté separado según su función.
+Las 4 capas principales son:
 
-En un sistema, no es recomendable colocar todo el código en un solo lugar, porque después se vuelve difícil de entender, corregir o modificar. Por eso se divide en capas.
+* Capa de presentación
+* Capa de negocio
+* Capa de acceso a datos
+* Capa de entidades
 
-Las capas principales son:
+La información normalmente funciona de esta manera:
 
-Capa de presentación
-
-Capa de negocio
-
-Capa de acceso a datos
-
-Además, en muchos proyectos también se utiliza una capa de entidades, que ayuda a representar los datos de la base de datos mediante clases.
-
-La información normalmente trabaja de esta manera:
-
+```text
 Presentación → Negocio → Acceso a Datos → Base de Datos
+```
+
+La capa de entidades se relaciona con las demás capas porque sus clases se usan para transportar la información.
+
+Por ejemplo, en `Northwind`, la capa de acceso a datos consulta la tabla `Customers` y convierte esa información en un objeto `Customer`.
+
+Luego, la capa de negocio recibe ese objeto `Customer` para revisarlo o aplicar reglas.
+
+Finalmente, la capa de presentación recibe el objeto `Customer` y muestra sus datos al usuario.
+
+```text
+Base de Datos → Acceso a Datos → Negocio → Presentación
+                         ↑          ↑             ↑
+                      Entidades  Entidades    Entidades
+```
+
+La capa de entidades funciona como apoyo para mover los datos entre las capas de forma ordenada.
+
+En esta arquitectura, LINQ participa principalmente en la capa de acceso a datos, porque ahí se realizan las consultas a la base de datos, como buscar clientes, listar productos o filtrar pedidos de `Northwind`.
+
+También puede participar en la capa de negocio, pero de una forma diferente. En esa capa, LINQ no consulta directamente la base de datos, sino que puede filtrar, ordenar o revisar información que ya fue obtenida desde la capa de acceso a datos.
+
+La capa de entidades también se relaciona con LINQ, porque las consultas trabajan con clases y objetos, como `Customer`, `Product` u `Order`.
