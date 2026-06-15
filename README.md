@@ -65,4 +65,4 @@ En esta arquitectura, LINQ participa principalmente en la capa de acceso a datos
 
 También puede participar en la capa de negocio, pero de una forma diferente. En esa capa, LINQ no consulta directamente la base de datos, sino que puede filtrar, ordenar o revisar información que ya fue obtenida desde la capa de acceso a datos.
 
-La capa de entidades también se relaciona con LINQ, porque las consultas trabajan con clases y objetos, como `Customer`, `Product` u `Order`.
+La capa de entidades también se relaciona con LINQ, porque LINQ trabaja con clases y objetos, como `Customer`, `Product` u `Order`, para consultar y manejar la información de forma ordenada.
