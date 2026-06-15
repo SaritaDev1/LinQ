@@ -9,12 +9,14 @@ Cada columna de la tabla se convierte en una propiedad dentro de la clase.
 Por ejemplo, si la tabla Clientes tiene los campos IdCliente, Nombre, Apellido y Estado, la clase puede quedar así:
 
 public class Cliente
+```csharp
 {
     public int IdCliente { get; set; }
     public string Nombre { get; set; }
     public string Apellido { get; set; }
     public string Estado { get; set; }
 }
+```
 
 Esta capa es importante porque permite transportar la información entre las demás capas del sistema. Por ejemplo, la capa de acceso a datos puede obtener un cliente desde la base de datos y enviarlo a la capa de negocio usando la clase Cliente.
 
