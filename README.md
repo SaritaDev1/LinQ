@@ -54,9 +54,9 @@ Luego, la capa de negocio recibe ese objeto `Customer` para revisarlo o aplicar 
 Finalmente, la capa de presentación recibe el objeto `Customer` y muestra sus datos al usuario.
 
 ```text
-Base de Datos → Acceso a Datos → Negocio → Presentación
-                         ↑          ↑             ↑
-                      Entidades  Entidades    Entidades
+Presentación → Negocio → Acceso a Datos → Base de Datos
+      ↑            ↑             ↑
+  Entidades    Entidades     Entidades
 ```
 
 La capa de entidades funciona como apoyo para mover los datos entre las capas de forma ordenada.
