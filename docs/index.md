@@ -78,3 +78,23 @@ En esta arquitectura, LINQ participa principalmente en la capa de acceso a datos
 También puede participar en la capa de negocio, pero de una forma diferente. En esa capa, LINQ no consulta directamente la base de datos, sino que puede filtrar, ordenar o revisar información que ya fue obtenida desde la capa de acceso a datos.
 
 La capa de entidades también se relaciona con LINQ, porque LINQ trabaja con clases y objetos, como `Customer`, `Product` u `Order`, para consultar y manejar la información de forma ordenada.
+
+# Ejemplo de relación de tablas en Northwind
+
+Para este manual se toma como ejemplo la base de datos `Northwind`, porque contiene varias tablas relacionadas entre sí. Esto permite entender mejor cómo LINQ puede consultar información desde una base de datos real.
+
+En `Northwind` existen tablas como `Customers`, `Orders`, `Order Details`, `Products`, `Categories`, `Suppliers`, `Employees` y `Shippers`.
+
+Estas tablas se relacionan de la siguiente manera:
+
+```text
+Customers → Orders
+Orders → Order Details
+Order Details → Products
+Products → Categories
+Products → Suppliers
+Employees → Orders
+Shippers → Orders
+
+<img width="1226" height="799" alt="image" src="https://github.com/user-attachments/assets/764c65f6-fed3-4ff2-aa78-70e7ced9bba4" />
+
