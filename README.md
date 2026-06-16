@@ -8,11 +8,15 @@ Docente: Ing. Hernán Naranjo
 
 # Índice
 
-1. [Capa de presentación](./1.Capa%20de%20presentación.md)
-2. [Capa de negocio](./2.Capa%20de%20negocio.md)
-3. [Capa de acceso a datos](./3.Capa%20de%20acceso%20a%20datos.md)
-4. [Capa de entidades](./4.Capa%20de%20entidades.md)
-5. [Relación entre SQL y LINQ](./5.Relación%20entre%20SQL%20y%20LINQ.md)
+- [Introducción](#introducción)
+- [Objetivo](#objetivo)
+- [¿Qué es LINQ?](#qué-es-linq)
+- [Arquitectura de 4 capas](#arquitectura-de-4-capas)
+- [Capa de presentación](./1.Capa%20de%20presentación.md)
+- [Capa de negocio](./2.Capa%20de%20negocio.md)
+- [Capa de acceso a datos](./3.Capa%20de%20acceso%20a%20datos.md)
+- [Capa de entidades](./4.Capa%20de%20entidades.md)
+- [Relación entre SQL y LINQ](./5.Relación%20entre%20SQL%20y%20LINQ.md)
 
 # Introducción
 
