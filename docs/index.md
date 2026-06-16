@@ -95,6 +95,6 @@ Products → Categories
 Products → Suppliers
 Employees → Orders
 Shippers → Orders
-
-<img width="1226" height="799" alt="image" src="https://github.com/user-attachments/assets/764c65f6-fed3-4ff2-aa78-70e7ced9bba4" />
+```
+<img width="1226" height="799" alt="Diagrama de relaciones de Northwind" src="https://github.com/user-attachments/assets/764c65f6-fed3-4ff2-aa78-70e7ced9bba4" />
 
